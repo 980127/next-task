@@ -50,7 +50,7 @@ export default function GlobalStyles() {
         },
 
         //scroll bar
-        '.MuiPaper-root':{
+        '.css-1693cdt-MuiPaper-root':{
         scrollbarColor: "#6b6b6b #2b2b2b",
           "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
             backgroundColor: "rgb(238,238,238)",
