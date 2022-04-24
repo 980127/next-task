@@ -29,6 +29,9 @@ export default function GlobalStyles() {
             display: 'none'
           }
         },
+        '.MuiListItemButton-root.active':{
+          backgroundColor:'rgb(238,238,238)'
+        },
         '.css-1pmcmn1': {
           overflow:'auto !important' 
         },

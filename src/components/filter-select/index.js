@@ -168,7 +168,7 @@ export default function FilterSelect(props) {
                       {itemt[1].map((item,i) => {
                         if (item.name.toLowerCase().includes(keyword.toLowerCase())) {
                           return <ListItem disablePadding onClick={() => handleSetItem(item,i,itemt)}>
-                  
+                            {isActive === i ? console.log(name,"-------",item.name):''}
                             <ListItemButton className={ isActive === i && name == item.name ? 'active':''}>
                               <ListItemText inset primary={item.name} />
                             </ListItemButton>
