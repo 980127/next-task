@@ -30,10 +30,10 @@ export default function GlobalStyles() {
           }
         },
         '.css-1pmcmn1': {
-          overflow:'auto'
+          overflow:'auto !important' 
         },
         '.css-1k2mj46':{
-          overflow:'auto'
+          overflow:'auto !important' 
         },
         '.css-5a54uv-MuiStack-root': {
           '&::-webkit-scrollbar': {
