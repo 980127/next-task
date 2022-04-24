@@ -1,7 +1,6 @@
 // material
 import { useTheme } from '@mui/material/styles';
 import { GlobalStyles as GlobalThemeStyles } from '@mui/material';
-import autoMergeLevel1 from 'redux-persist/es/stateReconciler/autoMergeLevel1';
 
 // ----------------------------------------------------------------------
 
@@ -24,15 +23,6 @@ export default function GlobalStyles() {
           '&::-webkit-scrollbar': {
             display: 'none'
           }
-        },
-        '.css-1pmcmn1':{
-          overflow:'auto'
-        },
-        '.css-1k2mj46':{
-          overflow:'auto'
-        },
-        '.MuiListItemButton-root.active':{
-            backgroundColor:'rgb(238,238,238)'
         },
         '.css-1oryxm9 .MuiPaper-root': {
           '&::-webkit-scrollbar': {

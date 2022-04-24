@@ -86,9 +86,10 @@ export default function FilterSelect(props) {
     setFilterTitle(filter)
   }
 
-  const handleSetItem = (item,i) => {
+  const handleSetItem = (item,i,itemt) => {
     setItem(item)
     setName(item.name)
+    setFilterTitle(itemt[0])
     setActive(i);
   }
 
@@ -125,6 +126,7 @@ export default function FilterSelect(props) {
 
   const handleSubmit = () => {
     handleChange(item)
+    setKeyword('')
   }
 
 
@@ -151,20 +153,20 @@ export default function FilterSelect(props) {
           <section className='row mt-5'>
             <aside className='col-md-6'>
               <Paper style={{ maxHeight: 400, overflow: 'auto',borderWidth:'1px',borderStyle:'solid',borderColor:'rgb(237,237,237)', borderRadius:'3px', padding:'10px' }}>
-                {Object.entries(list).map( item => {
+                {Object.entries(list).map( itemt => {
                    const count=0;
-                    {item[1].map(item => {
-                          if (item.name.toLowerCase().includes(keyword.toLowerCase())) {
+                    {itemt[1].map(itemt => {
+                          if (itemt.name.toLowerCase().includes(keyword.toLowerCase())) {
                             count++;
                           }
                         })}
                       
                   return <>
-                     {count != 0 ?  <h4>{item[0]}</h4>:''}
+                     {count != 0 ?  <h4>{itemt[0]}</h4>:''}
                     <List>
-                      {item[1].map((item,i) => {
+                      {itemt[1].map((item,i) => {
                         if (item.name.toLowerCase().includes(keyword.toLowerCase())) {
-                          return <ListItem disablePadding onClick={() => handleSetItem(item,i)}>
+                          return <ListItem disablePadding onClick={() => handleSetItem(item,i,itemt)}>
                   
                             <ListItemButton className={ isActive === i && name == item.name ? 'active':''}>
                               <ListItemText inset primary={item.name} />
