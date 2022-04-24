@@ -84,6 +84,7 @@ export default function FilterSelect(props) {
     const options = document.querySelectorAll('.MuiPaper-root h4')[index].scrollIntoView({ behavior: 'smooth' });
     console.log('options', options)
     setFilterTitle(filter)
+    setItem({})
   }
 
   const handleSetItem = (item,i,itemt) => {

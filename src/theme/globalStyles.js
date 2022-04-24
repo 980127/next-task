@@ -29,6 +29,12 @@ export default function GlobalStyles() {
             display: 'none'
           }
         },
+        '.css-1pmcmn1': {
+          overflow:'auto'
+        },
+        '.css-1k2mj46':{
+          overflow:'auto'
+        },
         '.css-5a54uv-MuiStack-root': {
           '&::-webkit-scrollbar': {
             display: 'none'
